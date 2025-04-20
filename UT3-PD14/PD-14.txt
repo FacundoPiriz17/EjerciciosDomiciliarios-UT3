@@ -1,0 +1,21 @@
+PoneEnCola(unElemento)
+Precondición: Cola no llena (primero != próximo), unElemento != nulo.
+Postcondición: elemento es puesto en la cola.
+Implementación:
+
+       	cola[próximo] <- unElemento
+        próximo <- (próximo + 1) mod cola.tamaño
+
+FinAlgoritmo 
+
+
+Algoritmo QuitaDeCola()
+Precondición: Cola no vacía.
+Postcondición: el primer elemento en ser añadido a la cola
+Implementación:
+
+        unElemento <- cola[primero]
+        primero <- (primero + 1) mod tamañoCola
+        devolver unElemento
+
+FinAlgoritmo
